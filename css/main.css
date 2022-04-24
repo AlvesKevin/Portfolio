@@ -1,0 +1,186 @@
+html body{
+    padding: 0;
+    margin: 0;
+    background-color: #312F2F;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration:none;
+    color: #AC87DA;
+}
+
+.componentPage{
+    display: flex;
+    flex-direction: row;
+}
+
+.navLeft{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    height: 948px;
+    background-color: #212020;
+}
+
+.containerLogo{
+    background-color: #171616;
+    width: 130px;
+    height: 185px;
+}
+
+#containerMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 50px;
+    height: 200px;
+}
+
+#containerReseau{
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    margin-top: 300px;
+    margin-left: 15px;
+}
+
+#logo{
+    width: 100px;
+    margin-left: 15px;
+}
+
+#nameDev{
+    color: white;
+    font-size: 22px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+#sousTitre{
+    color: white;
+    font-size: 11px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+#home{
+    width: 50px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#home:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#portfolio{
+    width: 50px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#portfolio:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#aboutMe{
+    width: 50px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#aboutMe:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#git{
+    width: 40px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#git:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#linkdin{
+    width: 40px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#linkdin:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#title{
+    color: white;
+    margin-left: 100px;
+    margin-top: 200px;
+    font-size: 60px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+}
+
+#littleText{
+    color: white;
+    margin-left: 100px;
+    font-size: 18px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+}
+
+/*Hoover p*/
+#name::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+#name:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#name::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #815caf;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+#name{
+    position: relative;
+    font-size: 5rem;
+}
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
