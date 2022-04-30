@@ -5,6 +5,24 @@ html body{
     overflow-x: hidden;
 }
 
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 a{
     text-decoration:none;
     color: #3678DC;
@@ -22,7 +40,7 @@ a{
     position: sticky;
     top: 0;
     width: 130px;
-    height: 947px;
+    height: 963px;
     background-color: #212020;
 }
 
@@ -47,6 +65,7 @@ a{
     justify-content: space-between;
     width: 90px;
     margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 #logo{
@@ -262,6 +281,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    background-color: #312F2F;
 }
 
 .contact{
